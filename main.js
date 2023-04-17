@@ -31,15 +31,15 @@ let bookStore = [
 ];
 
 // library constructor
-function Book(title, author, pages, image, isRead) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.image = image;
-    this.isRead = isRead;
+class Book {
+    constructor(title, author, pages, image, isRead) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.image = image;
+        this.isRead = isRead;
+    }
 }
-
-
 
 // get book detail
 const getBookInfo = () => {
