@@ -30,7 +30,7 @@ let bookStore = [
       }
 ];
 
-// library constructor
+// library class
 class Book {
     constructor(title, author, pages, image, isRead) {
         this.title = title;
@@ -41,7 +41,7 @@ class Book {
     }
 }
 
-// get book detail
+// get book detail from form input
 const getBookInfo = () => {
     const form = document.getElementById('addBookForm');
     const title = form.elements['title'].value;
@@ -50,7 +50,7 @@ const getBookInfo = () => {
     const image = form.elements['image'].value;
     const isRead = form.elements['isRead'].value;
 
-    // // create book obj
+    // // create book obj from class
     const newBook = new Book(title, author, pages, image, isRead);
 
     form.reset();
